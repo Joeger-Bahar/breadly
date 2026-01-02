@@ -1,5 +1,5 @@
-name: namer_app
-description: "A new Flutter project."
+name: breadly
+description: "A bread a day keeps the hunger away."
 publish_to: "none"
 version: 0.1.0
 
@@ -15,6 +15,8 @@ dependencies:
   shared_preferences: ^2.3.2
   path_provider: ^2.1.5
   workmanager: ^0.9.0+3
+  android_intent_plus: ^6.0.0
+  url_launcher: ^6.3.2
 
 dev_dependencies:
   flutter_test:
@@ -25,8 +27,11 @@ dev_dependencies:
 flutter_launcher_icons:
   android: true
   ios: true
-  image_path: "assets/ic.png"
+  image_path: "assets/bread_ic.png"  # base icon (still required)
+  adaptive_icon_background: "#795548"  # black background
+  adaptive_icon_foreground: "assets/bread_ic.png"  # your white toast icon
 
 flutter:
   assets:
     - assets/images/
+  uses-material-design: true
